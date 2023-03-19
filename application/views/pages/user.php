@@ -18,16 +18,31 @@
                 <th>Nome</th>
                 <th>Login</th>
                 <th>E-mail</th>
+                <th>Nascimento</th>
+                <th>Ações</th>
             </tr>
         </thead>
 
         <?php
-
         foreach ($user as $userinfo) : ?>
-            <tr>
+            <tr id="<?php echo 'line' . $userinfo['id'] ?>">
                 <td><?php echo  $userinfo['name'] ?></td>
                 <td><?php echo  $userinfo['username'] ?></td>
                 <td><?php echo  $userinfo['email'] ?></td>
+                <td><?php echo  date_format(date_create($userinfo['BirthDate']), 'd/m/Y') ?></td>
+                <td>
+                    <?php if ($userinfo['active'] == 1) { ?>
+
+                        <a href="/user/edit/<?php echo $userinfo['id'] ?>" class="edit">Editar</a>
+                        <a href="/user/delete/<?php echo $userinfo['id'] ?>" class="edit red">Desativar</a>
+
+                    <?php } else { ?>
+
+                        <a href="/user/delete/<?php echo $userinfo['id'] ?>" class="edit normal">Ativar</a>
+                        
+                    <?php } ?>
+
+                </td>
             </tr>
     <?php endforeach;
     } else {
@@ -35,3 +50,4 @@
     }
     ?>
 </table>
+<!-- <script src="/assets/js/edit.js"></script> -->

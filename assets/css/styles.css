@@ -64,6 +64,7 @@
 
     th, td {
         min-width: 200px;
+        height: 40px;
         text-align: center;
     }
 
@@ -80,6 +81,22 @@
     .logo {
         max-width: 100%;
         height: 50px;
+    }
+
+    .edit {
+        background: #ff8533;
+        height: 40px;
+        padding: 1.5%;
+        border-radius: 4pt;
+        max-width: 200px;
+        font-size: 10pt;
+        font-weight: 400;
+        color:#fff;
+        text-decoration: none;
+    }
+
+    .edit:hover {
+        background: #eb6913;
     }
 
     .left-menu, .right-menu {
@@ -128,8 +145,20 @@
         border: 2px solid #D22B1C;
     }
 
+    .red:hover {
+        background: #D22B1C;
+    }
+
+
     .normal {
         background: #0D3D8A;
         border: 2px solid #0D3D81;
+        transition: .3s ease;
+    }
+
+    .normal:hover {
+        background: #1064da;
+        border: 2px solid #1064da;
+
     }
 

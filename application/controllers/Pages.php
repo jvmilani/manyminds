@@ -2,7 +2,7 @@
 
 class Pages extends CI_Controller {
 
-    public function view($page = 'user') {
+    public function view( $page = 'user') {
         if (!file_exists(APPPATH . 'views/pages/' . $page . '.php')) {
             show_404();
         }
@@ -23,7 +23,4 @@ class Pages extends CI_Controller {
         $this->load->view('pages/' . $page, $data);
     }
 
-    public function store() {
-        
-    }
 }
