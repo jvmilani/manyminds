@@ -1,0 +1,135 @@
+
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: calc(100vh - 65px);
+    }
+
+    h1 {
+        margin-top: 1.5%;
+        text-align: center;
+    }
+    
+    form {
+        margin-top: 1.5%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+    }
+
+    input {
+        padding: 1.5%;
+        width: 300px;
+        height: 30px;
+        margin: 5px;
+        border: 2px solid #000;
+        border-radius: 4pt;
+    }
+
+    button {
+        width: 150px;
+        height: 40px;
+        margin-top: 1.5%;
+        background: #32cd55;
+        color: #fff;
+        font-size: 12pt;
+        font-weight: bold;
+        border: none;
+        border-radius: 4pt;
+        transition: .3s ease;
+    }
+
+    button:hover{
+        background: #32bc55;
+        cursor: pointer;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        height: 65px;
+        background: #f0f0f0;
+    }
+
+
+    th, td {
+        min-width: 200px;
+        text-align: center;
+    }
+
+    select .search-bar {
+        background: #f0f0f0;
+    }
+
+    .search-bar {
+        max-width: 200px;
+        max-height: 30px;
+        padding: 0;
+    }
+
+    .logo {
+        max-width: 100%;
+        height: 50px;
+    }
+
+    .left-menu, .right-menu {
+        display: flex;
+        align-items: center;
+        gap: 5%;
+        width: 50%;
+        padding: 0 5%;
+    }
+
+    .left-menu{
+        justify-content: flex-start;
+    }
+    .right-menu {
+        justify-content: flex-end;
+    }
+
+    .normal-link, .button-link {
+        text-decoration: none;
+        color: #000;
+        font-size: 12pt;
+        border-bottom: 2px solid #636363;
+        padding: 1.5%;
+    }
+
+    .normal-link{
+        padding: 1.5%;
+
+    }
+
+    .filters-header{
+        display: flex;
+        width: 90vw;
+        justify-content: space-between;
+        padding: 3% 1.5%;
+    }
+
+    .button-link {
+        padding: 1.5%;
+        border-radius: 4pt;
+        color: #fff;
+    }
+
+    .red {
+        background: #D22B2B;
+        border: 2px solid #D22B1C;
+    }
+
+    .normal {
+        background: #0D3D8A;
+        border: 2px solid #0D3D81;
+    }
+
